@@ -22,9 +22,13 @@ My learning objectives are:
 *  Correlate notes made with structure of CLI generated project.
 *  Add and compose a trivial additional custom component. (ScratchCpt)
 *  Try text interpolation inside an attribute value
-o  Try adding a filter to a bind expression
-o  Try using a method call as a binging expression
-o  Try a v-bind thing
+o  Try using a method call as a binding expression
+o  Can the function be defined externally to the methods block?
+o  Re-express this as a computed prop
+o  Give the componet some data and use it
+o  Make sure this follows the data-must-be-a-function guideline
+o  Using the fields in an object as props
+
 o  Try out a few of the directives/coding topics from the guide.
 o  Try adding another component, and composing it as a module
 o  Design a tiny demo app that:
@@ -40,5 +44,5 @@ o  Migrate the state management just introduced into VueX
 o  Move the rest of the state into VueX
 o  Try out the build/deploy suggestions.
 o  Go back to my notes and the user guide to see what big thigs I've missed.
-    o  Filters on binding expressions
+    o  Prop validation specification
     o  Routes?

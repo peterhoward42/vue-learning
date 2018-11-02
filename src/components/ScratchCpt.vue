@@ -4,6 +4,8 @@
     <a href="https://www.w3schools.com">This is a link</a>
     <br>
     <a :href="url">This has the url set by a prop.</a>
+    <br>
+    <a :href="provideUrl()">This has the url set by a method call.</a>
   </div>
 </template>
 
@@ -12,7 +14,12 @@ export default {
   name: 'ScratchCpt',
   props: {
     suffix: String,
-    url: String
+    url: String,
+  },
+  methods: {
+    provideUrl: function () {
+      return "/foo/bar.com"
+    }
   }
 }
 </script>
