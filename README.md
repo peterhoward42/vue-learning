@@ -15,13 +15,18 @@ My learning objectives are:
   rendering indications of the fetch state of these.
 - Learn how to integrate other peoples JS libraries like Plotly etc.
 - Learn how to build and deploy it.
+- Learn how to use Routes
 
 # Log of Work
 
-o  Correlate notes made with structure of CLI generated project.
-    o  Think CLI generated app has HelloWorld.vue already as a module
-        o  Read ECMA-5 description to see if so.
+*  Correlate notes made with structure of CLI generated project.
 o  Try to add a tiny bit of templated html to the baseline.
+    *  Make sure baseline runs
+    *  Augment HelloWorld component with a a new element rough copy of HelloWorld
+    *  Is class of div relevant? = no
+    *  Is css necessary? = no
+    o  What happens if you don't pass a prop?
+    o  What happens if you dont define a prop?
 o  Try to add a standard html element with a v-bind attribute.
 o  Try out a few of the directives/coding topics from the guide.
 o  Try adding another component, and composing it as a module
@@ -38,3 +43,4 @@ o  Migrate the state management just introduced into VueX
 o  Move the rest of the state into VueX
 o  Try out the build/deploy suggestions.
 o  Go back to my notes and the user guide to see what big thigs I've missed.
+    o  Routes?
