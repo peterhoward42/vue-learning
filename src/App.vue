@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <ScratchCpt suffix=".XYZ"/>
+    <ScratchCpt suffix=".XYZ" url="https://www.google.com"/>
   </div>
 </template>
 
