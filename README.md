@@ -16,13 +16,15 @@ My learning objectives are:
 - Learn how to integrate other peoples JS libraries like Plotly etc.
 - Learn how to build and deploy it.
 - Learn how to use Routes
+- Refresh how to use web storage
+- Refresh use of underscore and similar
 
 # Log of Work
 
 *  Correlate notes made with structure of CLI generated project.
 *  Add and compose a trivial additional custom component. (ScratchCpt)
 *  Try text interpolation inside an attribute value
-o  Try using a method call as a binding expression
+*  Try using a method call as a binding expression
 o  Can the function be defined externally to the methods block?
 o  Re-express this as a computed prop
 o  Give the componet some data and use it

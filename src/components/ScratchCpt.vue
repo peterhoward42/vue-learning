@@ -11,15 +11,15 @@
 
 <script>
 export default {
-  name: 'ScratchCpt',
+  name: "ScratchCpt",
   props: {
     suffix: String,
-    url: String,
+    url: String
   },
   methods: {
-    provideUrl: function () {
-      return "/foo/bar.com"
+    provideUrl: function() {
+      return "/foo/bar.com";
     }
   }
-}
+};
 </script>
