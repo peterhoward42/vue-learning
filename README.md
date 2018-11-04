@@ -27,7 +27,7 @@ My learning objectives are:
 *  Try using a method call as a binding expression
 *  Can the function be defined externally to the methods block? - better single line delegation
 *  Re-express this as a computed prop
-o  Give the componet some data and use it
+*  Give the componet some data and use it
 o  Make sure this follows the data-must-be-a-function guideline
 o  Using the fields in an object as props
 
