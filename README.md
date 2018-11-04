@@ -25,8 +25,8 @@ My learning objectives are:
 *  Add and compose a trivial additional custom component. (ScratchCpt)
 *  Try text interpolation inside an attribute value
 *  Try using a method call as a binding expression
-o  Can the function be defined externally to the methods block?
-o  Re-express this as a computed prop
+*  Can the function be defined externally to the methods block? - better single line delegation
+*  Re-express this as a computed prop
 o  Give the componet some data and use it
 o  Make sure this follows the data-must-be-a-function guideline
 o  Using the fields in an object as props
