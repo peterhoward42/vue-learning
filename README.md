@@ -28,23 +28,37 @@ My learning objectives are:
 *  Can the function be defined externally to the methods block? - better single line delegation
 *  Re-express this as a computed prop
 *  Give the componet some data and use it
-o  Make sure this follows the data-must-be-a-function guideline
-o  Using the fields in an object as props
-
-o  Try out a few of the directives/coding topics from the guide.
-o  Try adding another component, and composing it as a module
-o  Design a tiny demo app that:
-    o  Has multiple, hierachical components, and which could later
+*  Try adding another component, and composing it as a module
+*  Design a tiny demo app that:
+    *  Has multiple, hierachical components, and which could later
        expect to replace hard-coded state with dynamic data from a REST API.
-    o  Uses some bootstrap componenents.
-    o  Has some form and button input.
-o  Try to make it with hard coded data.
-o  Have I wanted yet to pass down whole objects in props?
+    *  Uses some bootstrap componenents.
+    *  Has some form and button input.
+    *  Appearance
+    *  Component breakdown
+        *  AppContainer
+        *  PostcodeApp
+        *  InputBlock
+        *  OutputBlock
+o  Try to make skeleton where the cpts are just divs with a paragraph in.
+    *  Replace ScratchCpt? = yes but comment out
+    o  Container has w3.css container in hosting the PostcodeApp
+        *  Research template
+        *  Introduce new component AppContainer called from App.vue - calling on scratchcpt
+        o  Copy w2.css into assets
+        o  Add container template round content
+    o  PostcodeApp is just a paragraph
+    o  Add in input block and output block
+o  Bring in bootstrap and hard coded content
+o  Bring in props or state accordingly
 o  Update one tiny piece to feed from a REST API query with the corresponding
-   state held in the Vue instance itself.
+   state held in the Vue instance itself. - blocking REST call to start with.
 o  Migrate the state management just introduced into VueX
 o  Move the rest of the state into VueX
+o  Upgrade to async fetch of data
+o  Upgrade UX to that of postcode finder
 o  Try out the build/deploy suggestions.
 o  Go back to my notes and the user guide to see what big thigs I've missed.
     o  Prop validation specification
     o  Routes?
+    o  What about lodash or underscore, and express?

@@ -1,22 +1,16 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <ScratchCpt suffix=".XYZ" url="https://www.google.com"/>
-    <CptWithState></CptWithState>
-  </div>
+    <div id="app">
+        <AppContainer/>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import ScratchCpt from './components/ScratchCpt.vue'
-import CptWithState from './components/CptWithState.vue'
+import AppContainer from "./components/AppContainer.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld,
-    ScratchCpt,
-    CptWithState,
+    AppContainer
   }
-}
+};
 </script>

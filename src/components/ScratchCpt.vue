@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w3-container">
     <p>scratch paragraph {{suffix}}</p>
     <a href="https://www.w3schools.com">This is a link</a>
     <br>
@@ -8,6 +8,8 @@
     <a :href="provideUrl()">This has the url set by a method call.</a>
     <br>
     <a :href="compUrlProperty">This has the url set by a computed property.</a>
+    <br>
+    <button class="w3-button w3-red">Button</button>
   </div>
 </template>
 
