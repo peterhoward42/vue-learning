@@ -1,15 +1,17 @@
 <template>
   <div>
-    <ScratchCpt suffix=".XYZ" url="https://www.google.com"/>
+    <PostCode/>
   </div>
 </template>
 
 <script>
-import ScratchCpt from './ScratchCpt.vue'
+// AppContainer exists to provide the top level container layout
+// for the app. For example, later it might provide a responsive grid conainer.
+import PostCode from './PostCode.vue'
 export default {
   name: "AppContainer",
   components: {
-    ScratchCpt,
+    PostCode,
   }
 };
 </script>

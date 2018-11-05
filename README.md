@@ -40,16 +40,29 @@ My learning objectives are:
         *  PostcodeApp
         *  InputBlock
         *  OutputBlock
-o  Try to make skeleton where the cpts are just divs with a paragraph in.
+*  Try to make skeleton where the cpts are just divs with a paragraph in.
     *  Replace ScratchCpt? = yes but comment out
-    o  Container has w3.css container in hosting the PostcodeApp
+    *  Container has w3.css container in hosting the PostcodeApp
         *  Research template
         *  Introduce new component AppContainer called from App.vue - calling on scratchcpt
-        o  Copy w2.css into assets
-        o  Add container template round content
-    o  PostcodeApp is just a paragraph
-    o  Add in input block and output block
+        *  Add container template round content
+    *  PostcodeApp is just a paragraph
+    *  Add in input block and output block
 o  Bring in bootstrap and hard coded content
+    *  Title in big
+    *  Input label, box and error
+    *  Output labels * 4 with fixed output
+    *  How layout output labels?
+    *  How layout input label and box?
+    *  How get input box to show up?
+    o  Make message red
+    o  Give input box default contents
+    o  Give it state to show or hide error message
+    o  Emit event on keystroke
+    o  Make handler to:
+        o  Set lat / long
+        o  Decide if error should show
+    o  Any more Styling
 o  Bring in props or state accordingly
 o  Update one tiny piece to feed from a REST API query with the corresponding
    state held in the Vue instance itself. - blocking REST call to start with.
