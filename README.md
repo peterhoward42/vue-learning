@@ -68,8 +68,24 @@ o  Bring in bootstrap and hard coded content
         *  make rendering in output conditional on prop
         *  check got right way round
     *  Collapse some redundant divs
-    o  Emit event on keystroke
-        o  Read how
+    *  Comments
+    *  Lat and long must be state of postcode app and be passed
+       to output as props
+        *  Give postcode the state
+        *  Define output to receive as props
+        *  Pass lat/long to output as attribs
+        *  Debug
+    o  Handle event on postcode input keystroke
+        o  maybe don't need to bind, sort out event first
+            *  first bind to variable
+            *  then add a watcher
+            o  have the watcher call a callback fn
+        o  first bind input to a var in input component
+            o  
+        o  first need handler on input element, or make it emit event
+        o  What low level vue construct
+        o  Delegate to postcode app parent handler
+        o  Add docco to changed components
     o  Make handler to:
         o  Set lat / long
         o  Decide if error should show

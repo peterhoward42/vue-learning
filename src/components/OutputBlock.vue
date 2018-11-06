@@ -1,3 +1,7 @@
+<!--
+OutputBlock is where you see the lat/long output.
+-->
+
 <template>
   <div>
     <div class="w3-row-padding">
@@ -24,12 +28,8 @@ export default {
   name: "OutputBlock",
   props: {
     notRecognized: Boolean,
+    lat: Number,
+    long: Number,
   },
-  data : function() {
-    return {
-      lat: 3456,
-      long: 6789,
-    }
-  }
 };
 </script>
