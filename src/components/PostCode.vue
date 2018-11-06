@@ -46,7 +46,8 @@ export default {
     inputChanged(inputText) {
         // Delegate to a library function, then update
         // state for this component accordingly.
-        Object.assign(this, getLatLong(inputText))
+        var foo = getLatLong(inputText);
+        console.log("XXXXX foo lati is: " + foo.lat);
     },
   }
 };

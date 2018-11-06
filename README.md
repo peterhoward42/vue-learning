@@ -82,6 +82,8 @@ My learning objectives are:
             *  Improve getting composite response and using it
             *  Comment getLatLong
 
+    * revert to function literals using => notation
+
 o  Upgrade getLatLong() to fetch from REST api (sync)
     o  Use axios foo.then.bar idiom
 o  Migrate the state management just introduced into VueX
