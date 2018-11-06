@@ -1,5 +1,6 @@
 <!--
-OutputBlock is where you see the lat/long output.
+OutputBlock is where you see the lat/long readout
+(if it is available).
 -->
 
 <template>

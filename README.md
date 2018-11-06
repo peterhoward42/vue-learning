@@ -48,7 +48,7 @@ My learning objectives are:
         *  Add container template round content
     *  PostcodeApp is just a paragraph
     *  Add in input block and output block
-o  Bring in bootstrap and hard coded content
+*  Bring in bootstrap and hard coded content
     *  Title in big
     *  Input label, box and error
     *  Output labels * 4 with fixed output
@@ -75,27 +75,18 @@ o  Bring in bootstrap and hard coded content
         *  Define output to receive as props
         *  Pass lat/long to output as attribs
         *  Debug
-    o  Handle event on postcode input keystroke
-        o  maybe don't need to bind, sort out event first
-            *  first bind to variable
-            *  then add a watcher
-            o  have the watcher call a callback fn
-        o  first bind input to a var in input component
-            o  
-        o  first need handler on input element, or make it emit event
-        o  What low level vue construct
-        o  Delegate to postcode app parent handler
-        o  Add docco to changed components
-    o  Make handler to:
-        o  Set lat / long
-        o  Decide if error should show
-    o  Any more Styling
-o  Bring in props or state accordingly
-o  Update one tiny piece to feed from a REST API query with the corresponding
-   state held in the Vue instance itself. - blocking REST call to start with.
+    *  Handle event on postcode input keystroke
+    *  Make function to:
+        *  How push this into a generic js function /module?
+            *  Get a function to be recognized and called
+            *  Improve getting composite response and using it
+            *  Comment getLatLong
+
+o  Upgrade getLatLong() to fetch from REST api (sync)
+    o  Use axios foo.then.bar idiom
 o  Migrate the state management just introduced into VueX
 o  Move the rest of the state into VueX
-o  Upgrade to async fetch of data
+o  Upgrade to async fetch of data and show spinner
 o  Upgrade UX to that of postcode finder
 o  Try out the build/deploy suggestions.
 o  Go back to my notes and the user guide to see what big thigs I've missed.

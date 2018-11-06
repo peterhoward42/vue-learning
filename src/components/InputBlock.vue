@@ -1,5 +1,7 @@
 <!--
 InputBlock is where you enter the postcode and see corresponding error messages.
+It is not repsonsible for interpreting what the user types in.
+Instead it sends changes to the *chnangeHandler* callback.
 -->
 
 <template>
@@ -17,15 +19,18 @@ InputBlock is where you enter the postcode and see corresponding error messages.
 export default {
   name: "InputBlock",
   props: {
-    notRecognized: Boolean,
-    changedHandler: Function,
+    notRecognized: Boolean, // So I can display an error message.
+    changedHandler: Function, // I send input changes to this callback 
   },
+
   data : function() {
     return {
-      inputTxt: "",
+      inputTxt: "", // The template binds input to this variable.
     }
   },
+
   watch: {
+    // Observe changes to the input text, and alert the callback.
     inputTxt: function(val, oldVal) {
       this.changedHandler(val)
     }
