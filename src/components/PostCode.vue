@@ -1,8 +1,8 @@
 <template>
   <div>
     <TitleBlock/>
-    <InputBlock/>
-    <OutputBlock/>
+    <InputBlock :notRecognized="notRecognized"/>
+    <OutputBlock :notRecognized="notRecognized"/>
   </div>
 </template>
 
@@ -16,6 +16,11 @@ export default {
     TitleBlock,
     InputBlock,
     OutputBlock,
+  },
+  data : function() {
+    return {
+      notRecognized: true,
+    }
   }
 };
 </script>

@@ -55,10 +55,21 @@ o  Bring in bootstrap and hard coded content
     *  How layout output labels?
     *  How layout input label and box?
     *  How get input box to show up?
-    o  Make message red
-    o  Give input box default contents
-    o  Give it state to show or hide error message
+    *  Make message red
+    *  Give input box default contents
+    *  Give it state to show or hide error message
+    *  Make the lat long values come from data
+    *  not yet recog should be a prop in parent
+        *  make it a prop in input class
+        *  make it data in postcode cpt
+        *  template it from postcode cpt with ref to data
+        *  make it a prop in output class
+        *  make rendering in input conditional on prop
+        *  make rendering in output conditional on prop
+        *  check got right way round
+    *  Collapse some redundant divs
     o  Emit event on keystroke
+        o  Read how
     o  Make handler to:
         o  Set lat / long
         o  Decide if error should show
