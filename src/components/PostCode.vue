@@ -17,12 +17,11 @@ these conclusions to the output block.
 </template>
 
 <script>
-import TitleBlock from './TitleBlock.vue'
-import InputBlock from './InputBlock.vue'
-import OutputBlock from './OutputBlock.vue'
+import axios from "axios"
 
-// Get some help from library functions.
-import { getLatLong } from "../lib/get-lat-long.js"
+import TitleBlock from "./TitleBlock.vue";
+import InputBlock from "./InputBlock.vue";
+import OutputBlock from "./OutputBlock.vue";
 
 export default {
   name: "PostCode",
@@ -30,25 +29,31 @@ export default {
   components: {
     TitleBlock,
     InputBlock,
-    OutputBlock,
+    OutputBlock
   },
 
-  data : function() {
+  data: function() {
     return {
       notRecognized: true,
       lat: 0,
-      long: 0,
-    }
+      long: 0
+    };
   },
 
   methods: {
     // Handler for when postcode input text changes.
-    inputChanged(inputText) {
-        // Delegate to a library function, then update
-        // state for this component accordingly.
-        var foo = getLatLong(inputText);
-        console.log("XXXXX foo lati is: " + foo.lat);
-    },
+    inputChanged(postCode) {
+      // Fetch the corresponding lat/long from a REST API.
+      // Treating errors as no-op - likely unknown/incomplete postcode.
+      this.notRecognized = true
+      axios.get("https:/postcodes.io/postcodes/" + postCode)
+      .then(response => {
+        this.notRecognized = false
+        this.lat = response.data.result.latitude
+        this.long = response.data.result.longitude
+      })
+      .catch( () => {})
+    }
   }
 };
 </script>

@@ -79,13 +79,13 @@ My learning objectives are:
     *  Make function to:
         *  How push this into a generic js function /module?
             *  Get a function to be recognized and called
-            *  Improve getting composite response and using it
-            *  Comment getLatLong
+    *  Sort out async get with axios
+        *  Nail fat arror fns incl consts
+        *  Try example
+        *  Maybe ditch lib module completely or use somehow?
 
-    * revert to function literals using => notation
+    o revert to function literals using => notation, pref using expression syntax where poss
 
-o  Upgrade getLatLong() to fetch from REST api (sync)
-    o  Use axios foo.then.bar idiom
 o  Migrate the state management just introduced into VueX
 o  Move the rest of the state into VueX
 o  Upgrade to async fetch of data and show spinner
