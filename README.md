@@ -84,14 +84,18 @@ My learning objectives are:
         *  Try example
         *  Maybe ditch lib module completely or use somehow?
 
-    o revert to function literals using => notation, pref using expression syntax where poss
+    * revert to function literals using => notation, pref using expression syntax where poss
+o  Switch back to bootstrap
 
 o  Migrate the state management just introduced into VueX
+    *  Augment study notes
+    o  Do it
+        o  What state shall I do with it?
+        o  Don't use async yet - leave that in vue-land
+        o  Get it to work
+    o  Consider benefit of moving async behaviour to store
+        o  Maybe first have state for fetching to make state change during async fetch lifecycle
 o  Move the rest of the state into VueX
-o  Upgrade to async fetch of data and show spinner
-o  Upgrade UX to that of postcode finder
-o  Try out the build/deploy suggestions.
 o  Go back to my notes and the user guide to see what big thigs I've missed.
-    o  Prop validation specification
     o  Routes?
     o  What about lodash or underscore, and express?
